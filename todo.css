@@ -1,0 +1,14 @@
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2b0a1a, #7b2d5e, #ff4d8d);
+}
+input{
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    
+
+}
