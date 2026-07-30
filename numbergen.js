@@ -1,7 +1,15 @@
-let input=document.querySelector("input");
-let a=Number(prompt("enter the first number for range:"))
-let b=Number(prompt("enter the second number for range:"))
-input.value=Math.floor((Math.random()*(b-a+1))+a)
-if(isNaN(a) || isNaN(b)){
-    input.value="NAN"
-}
+let input=document.querySelector("#result");
+let a =document.querySelector("#first");
+let b=document.querySelector("#second");
+let button=document.querySelector("button");
+button.addEventListener("click",(e)=>{
+    let first=Number(a.value);
+    let second=Number(b.value);
+    if(isNaN(first) || isNaN(second)){
+        input.value="NaN"
+        return;
+    }
+    let low=Math.min(first,second);
+    let high=Math.max(first,second)
+    input.value=Math.floor(Math.random()*(high-low+1)+low);
+})
