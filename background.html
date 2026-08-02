@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+        margin:100px;
+        border:2px solid black;
+        height: 100px;
+        width: 100px;
+        animation: komal 1s ease-in-out  infinite forwards ;
+       }
+       @keyframes komal {
+          from{
+            transform: rotate(0deg) translate(0px) ;
+            
+          }
+          to{
+            transform: rotate(360deg) translateX(100px) scale(1.2);
+
+          }
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <script src="background.js"></script>
+</body>
+</html>
