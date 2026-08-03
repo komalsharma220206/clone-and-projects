@@ -5,28 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       .box{
-        margin:100px;
+       .box1{
+        
+        box-shadow:-1px 20px 25px rgba(0,0,0,.15);
+
         border:2px solid black;
         height: 100px;
         width: 100px;
-        animation: komal 1s ease-in-out  infinite forwards ;
+        animation: float 1s ease-in-out  infinite forwards ;
        }
-       @keyframes komal {
-          from{
-            transform: rotate(0deg) translate(0px) ;
-            
-          }
-          to{
-            transform: rotate(360deg) translateX(100px) scale(1.2);
+       @keyframes float{
+    0%{
+        transform:translateY(0) rotate(-2deg);
+    }
 
-          }
-       }
+    50%{
+        transform:translateY(-15px) rotate(2deg);
+    }
+
+    100%{
+        transform:translateY(0) rotate(-2deg);
+    }
+}
     </style>
 </head>
 <body>
     <div class="box">
+        <div class="box1">
+            <img src="" alt="">
+        </div>
+        <div class=" box2">
 
+        </div>
     </div>
     <script src="background.js"></script>
 </body>
