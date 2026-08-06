@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            border:1px solid black;
+            background-color: green;
+            height:50px;
+            width:200px;
+
+        }
+        .hello{
+            height:100px;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <form action="post">
+        <label for="name">Name</label>
+        <br>
+        <input class="hello" type="text" name="name" id="name" placehloder="Enter your name">
+        <br>
+         <label for="email">Email</label>
+        <br>
+        <input type="text" name="email" id="email" placehloder="Enter your email">
+        <br>
+        <label for="age">Age</label>
+        <br>
+        <input type="text" name="age" id="age" placehloder="Enter your age">
+        <br>
+        <label for="best">Which option Best describes you?</label>
+        <br>
+        <select name="best" id="best">
+            <option value="student">student</option>
+            <option value="intern">intern</option>
+        </select>
+        <br>
+        <label for="">Would you reommed GeeksforGeeks to a friend?</label>
+        <br>
+        <label for="yes">YES</label>
+        <input type="radio" name="rec" id="yes">
+        <br>
+        <label for="no">NO</label>
+        <input type="radio" name="rec" id="no">
+        <br>
+        <label for="maybe">MAYBE</label>
+        <input type="radio" name="rec" id="maybe">
+        <br>
+        <label for="">Languages and Frameworks known</label>
+        <label for="C">C</label>
+        <input type="checkbox" name="C" id="C" value="yes">
+        <br>
+        <label for="C++">C++</label>
+        <input type="checkbox" name="C++" id="C++" value="yes">
+        <br>
+        <label for="C#">C#</label>
+        <input type="checkbox" name="C#" id="C#" value="yes">
+        <br>
+        <label for="Java">Java</label>
+        <input type="checkbox" name="Java" id="Java" value="yes">
+        <br>
+        <label for="Python">Python</label>
+        <input type="checkbox" name="Python" id="Python" value="yes">
+        <br>
+        <label for="Javascript">Javascript</label>
+        <input type="checkbox" name="Javascript" id="Javascript" value="yes">
+        <br>
+        <label for="React">React</label>
+        <input type="checkbox" name="React" id="React" value="yes">
+        <br>
+        <label for="Angular">Angular</label>
+        <input type="checkbox" name="Angular" id="Angular" value="yes">
+        <br>
+        <label for="Django">Django</label>
+        <input type="checkbox" name="Django" id="Django" value="yes">
+        <br>
+        <label for="spring">Spring</label>
+        <input type="checkbox" name="spring" id="spring" value="yes">
+        <br>
+         <label for="query">Any comments or Suggestions</label>
+         <textarea name="query" id="query"></textarea>
+    </form>
+    <div class="button">
+        Submit
+    </div>
+</body>
+</html>
