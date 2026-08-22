@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height:100vh;
+            background: linear-gradient(135deg, #fff0f5, #ffc0cb, #ff69b4);
+        }
+        button{
+           margin: 30px;
+           border:2px solid black;
+           height: 40px;
+           width:200px;
+           border-radius: 10px;
+           font-size: larger;
+
+        }
+        input{
+           margin: 30px;
+           border:2px solid black;
+           height: 50px;
+           width:400px;
+           border-radius: 10px;
+           text-align: center;
+           font-size: larger;
+           font-weight: 800;
+
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        RANDOM NUMBER GENERATOR
+    </h1>
+    <button>
+        CLICK 
+    </button>
+    <div class="input">
+       <input type="text">
+    </div>
+    <script>
+        let button=document.querySelector("button");
+        let input=document.querySelector("input");
+        button.addEventListener("click",(e)=>{
+            input.value=Math.floor((Math.random()*10)+1);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .cont{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+       }
+       input{
+        margin:10px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 1px 1px 2px black;
+
+
+       }
+       button{
+        border:none;
+        box-shadow: 1px 1px 2px black;
+        border-radius: 5px;
+        margin:20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <input type="number" placeholder="ENTER FIRST NUMBER" class="i1">
+    <input type="number" PLACEHOLDER="ENTER SECOND NUMBER" class="i2">
+    <button>
+        NUMBER GENERATOR
+    </button>
+    <input type="text" placeholder="THE NUMBER GENERATED IS" class="input">
+    </div>
+     <script>
+        let button=document.querySelector("button")
+        let input1=document.querySelector(".i1");
+        let input2=document.querySelector(".i2");
+        let input=document.querySelector(".input")
+        button.addEventListener("click",(e)=>{
+              let i1=Number(input1.value);
+              let i2=Number(input2.value)
+              let maxi=Math.max(i1,i2);
+              let mini=Math.min(i1,i2);
+              input.value=Math.floor(Math.random()*(maxi-mini+1)+mini);
+
+           
+        })
+     </script>
+</body>
+</html>
