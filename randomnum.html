@@ -52,7 +52,7 @@
         let button=document.querySelector("button");
         let input=document.querySelector("input");
         button.addEventListener("click",(e)=>{
-            input.value=Math.floor((Math.random()*10)+1);
+            input.value=Math.floor((Math.random()*(9999-1000+1))+1000);
         })
     </script>
 </body>
