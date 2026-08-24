@@ -4,56 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height:100vh;
-            background: linear-gradient(135deg, #fff0f5, #ffc0cb, #ff69b4);
-        }
-        button{
-           margin: 30px;
-           border:2px solid black;
-           height: 40px;
-           width:200px;
-           border-radius: 10px;
-           font-size: larger;
-
-        }
-        input{
-           margin: 30px;
-           border:2px solid black;
-           height: 50px;
-           width:400px;
-           border-radius: 10px;
-           text-align: center;
-           font-size: larger;
-           font-weight: 800;
-
-        }
-        h1{
-            text-align: center;
-        }
-    </style>
 </head>
+<link rel="stylesheet" href="randomnum.css">
 <body>
-    <h1>
-        RANDOM NUMBER GENERATOR
-    </h1>
-    <button>
-        CLICK 
-    </button>
-    <div class="input">
-       <input type="text">
+    <div class="calc">
+        <input type="text">
+        <div>
+            <button>AC</button>
+            <button>DEL</button>
+            <button>=</button>
+            <button>SQ</button>
+        </div>
+        <DIV>
+            <BUtton>
+                9
+            </BUtton>
+            <button>8</button>
+            <button>7</button>
+            <button>/</button>
+        </DIV>
+        <div>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>*</button>
+        </div>
+        <div>
+            <button>3</button>
+            <button>2</button>
+            <button>1</button>
+            <button>+</button>
+        </div>
+        <div>
+            <button>.</button>
+            <button>00</button>
+            <button>0</button>
+            <button>-</button>
+        </div>
     </div>
-    <script>
-        let button=document.querySelector("button");
-        let input=document.querySelector("input");
-        button.addEventListener("click",(e)=>{
-            input.value=Math.floor((Math.random()*(9999-1000+1))+1000);
-        })
-    </script>
+    <script src="random.js"></script>
 </body>
 </html>
