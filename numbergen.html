@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:60px;
+            width:60px;
+            border:2px solid black;
+            margin:10px;
+            border-radius: 50px;
+            animation: transform 5s ease-in-out  infinite alternate forwards;
+            background-color: red;
+        }
+        @keyframes transform{
+            0%{
+                transform: translateX(0);
+                background-color: orange;
+            }
+            25%{
+               transform: translateX(300px);
+               background-color: yellow; 
+            }
+            50%{
+                transform: translateX(0);
+                background-color: green;
+            }
+            75%{
+                transform: translateX(-300px);
+                background-color: blue;
+            }
+            100%{
+                transform: translateX(0);
+                background-color: purple;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="numbergen.css">
+</head>
+<body>
+    <div class="box trans">
+
+    </div>
+    <div class="heading">
+            <H1>RANDOM NUMBER GENERATOR</H1>
+        </div>
+    <div class="cont">
+        
+        <div class="main1">
+           <input id="first" type="number" placeholder="ENTER FIRST NUMBER">
+        </div>
+        <div class="main1" >
+            <input id="second" type="number" placeholder="ENTER SECOND NUMBER">
+        </div>
+        <div>
+            <button>GENERATE</button>
+        </div>
+        <div  class="main1">
+            <input id="result" type="text" placeholder="RANDOM NUMBER">
+        </div>
+    </div>
+    <script src="numbergen.js"></script>
+</body>
+</html>
