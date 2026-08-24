@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <style>
+        .box1{
+            box-sizing: border-box;
+            font-size: smaller;
+            font-weight: 800;
+            font-style: italic;
+
+        }
+        .b1{
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+        .b2{
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+        .b3{
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+        .b4{
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease ease-in-out;
+        }
+        .b1:hover{
+            width:200px;
+        }
+        .b2:hover{
+            width:200px;
+        }
+        .b3:hover{
+            width:200px;
+        }
+        .b4:hover{
+            width:200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1 b1 h-[100px] w-[100px] border-2 border-black-600 m-2 bg-pink-500 font-krishna">EASE</div>
+    <div class="box1 b2 h-[100px] w-[100px] border-2 border-black-600 m-2 bg-pink-400 font-krishna">EASE IN</div>
+    <div class="box1 b3 h-[100px] w-[100px] border-2 border-black-600 m-2 bg-pink-300 font-krishna">EASE OUT</div>
+     <div class="box1 b4 h-[100px] w-[100px] border-2 border-black-600 m-2 bg-pink-200 font-krishna">EASE IN OUT</div>
+</body>
+</html>

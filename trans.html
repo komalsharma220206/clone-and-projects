@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <style>
+        :root{
+            --size:2px;
+        }
+        .b1{
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .b1:hover{
+            transform: scale(1.2);
+        }
+        .b2{
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .b3{
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .b4{
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .b2:hover{
+            transform: translateX(200px);
+        }
+        .b3:hover{
+            transform: rotate(360deg);
+        }
+        .b4:hover{
+            transform: skewX(45deg);
+        }
+        .b5{
+            animation: rotate 2s ease-in-out infinite;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        h1{
+            border: var(--size)solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box b1 h-[100px] w-[100px] border-2 border-black-600 m-5 bg-pink-500 font-krishna">SCALE</div>
+    <div class="box b2 h-[100px] w-[100px] border-2 border-black-600 m-5 bg-pink-400 font-krishna">TRANSLATE</div>
+    <div class="box b3 h-[100px] w-[100px] border-2 border-black-600 m-5 bg-pink-300 font-krishna">ROTATE</div>
+    <div class="box b4 h-[100px] w-[100px] border-2 border-black-600 m-5 bg-pink-200 font-krishna">SKEW</div>
+    <div class="box b5 h-[100px] w-[100px] border-2 border-black-600 m-5 bg-pink-300 font-krishna">ROTATE</div>
+    <h1>
+        hello
+    </h1>
+
+</body>
+</html>
